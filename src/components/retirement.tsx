@@ -3,7 +3,10 @@ import { Slider } from "antd";
 
 export default function Retirement(){
     return(
+        <>
+        <br/><br/>
         <div className="tablet-only mobile-card" style={{padding:0, flexFlow:"column", width:"95%"}}>
+            
                         <div style={{width:"100%", padding:"1.5rem"}}>
                             <h3>Retirement Strategy</h3>
                             <div style={{marginTop:"1.5rem", width:"85%"}}>
@@ -30,7 +33,10 @@ export default function Retirement(){
                         
                         </div>
                         <button style={{marginTop:"1.5rem", borderTopRightRadius:0,borderTopLeftRadius:0, borderBottomLeftRadius:"1rem", borderBottomRightRadius:"1rem"}} className="button">Update</button>
-                    
+                        <br/><br/>
                     </div>
+        </>
+        
+                    
     )
 }

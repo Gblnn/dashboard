@@ -26,10 +26,10 @@ export default function Navbar() {
                 <Link to="home" className={location.pathname=="/layout/home"?"active":"nav-item"}>
                     <HomeOutlined/>
                 </Link>
-                <Link to="cards" className={location.pathname=="/layout/cards"?"active":"nav-item"}>
+                <Link to="account" className={location.pathname=="/layout/account"?"active":"nav-item"}>
                     <IdcardOutlined/>
                 </Link>
-                <Link to="list" className={location.pathname=="/layout/list"?"active":"nav-item"}>
+                <Link to="listings" className={location.pathname=="/layout/listings"?"active":"nav-item"}>
                     <ProfileOutlined/>
                 </Link>
                 <Link to="profile" className={location.pathname=="/layout/profile"?"active":"nav-item"}>

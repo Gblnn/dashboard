@@ -48,7 +48,7 @@ export default function MobileView(){
 
                 <div className="mobile-card" style={{background:"none", padding:"0", width:"90%", justifyContent:""}}>
                     
-                    <div>
+                    <div style={{width:"100%"}}>
                         <br/>
                         <p style={{fontSize:"0.85rem"}}><strong>Retirement Income</strong></p>
                         <h3 style={{fontWeight:"800"}}>Starting Year 2056 </h3>
@@ -139,7 +139,7 @@ export default function MobileView(){
                 <br/>
 
                 <div className="mobile-card" style={{padding:0, flexFlow:"column", width:"95%"}}>
-                    <div style={{width:"100%", padding:"1.5rem"}}>
+                    <div style={{width:"85%", padding:"1.5rem"}}>
                         <h3>Retirement Strategy</h3>
                         <div style={{marginTop:"1.5rem", width:"85%"}}>
 

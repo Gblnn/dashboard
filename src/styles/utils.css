@@ -1,0 +1,255 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(220 220 220);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-container {
+  z-index: 10;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 1px 1px 20px rgba(0 0 0/15%);
+}
+
+.shadow {
+  box-shadow: 1px 1px 20px rgba(0 0 0/15%);
+}
+
+.nav {
+  margin: 1rem;
+  display: flex;
+  flex-flow: row;
+  gap: 2rem;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+.nav-item {
+  font-size: 1rem;
+  padding: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  transition: 0.3s;
+  color: rgba(0 0 0/50%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: rgba(0 0 0/5%);
+}
+
+.active {
+  font-size: 1rem;
+  padding: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #4935ff;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 10px rgba(0 0 0/20%);
+}
+
+.dropdown {
+  gap: 0.5rem;
+  padding: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: white;
+  align-items: center;
+  width: fit-content;
+  background: #4935ff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.dropdown:hover {
+  background: #392ac6;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: white;
+  align-items: center;
+  background: #4935ff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.a {
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.main {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.side {
+  background: rgb(245 245 245);
+  width: 35ch;
+  display: none;
+  flex-flow: column;
+  gap: 1.25rem;
+  height: 100%;
+}
+
+.middle {
+  height: 100%;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.retirement-strategy {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.mobile-only {
+  display: block;
+}
+
+.mobile-view {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-container {
+  padding-top: 3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+  overflow-y: scroll;
+  height: fit-content;
+}
+
+.mobile-card {
+  display: flex;
+  background-color: rgb(245 245 245);
+  width: 80%;
+  padding: 1.75rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-radius: 1rem;
+}
+
+@media (width >= 1120px) {
+  .main {
+    display: flex;
+  }
+
+  .mobile-view {
+    display: none;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 2rem;
+    width: 100%;
+    height: 96%;
+    margin: 1rem;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    width: fit-content;
+    height: 94%;
+    margin: 0.5rem;
+    position: relative;
+    background: none;
+    box-shadow: none;
+  }
+
+  .desktop-only {
+    display: flex;
+  }
+
+  .column {
+    flex-flow: column;
+  }
+
+  .nav {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    overflow-y: hidden;
+  }
+
+  .side {
+    display: flex;
+  }
+
+  .middle {
+    display: flex;
+  }
+}
+
+@media (width >= 1500px) {
+  .retirement-strategy {
+    display: flex;
+  }
+
+  .tablet-only {
+    display: none;
+  }
+
+  .main {
+    justify-content: flex-start;
+  }
+}

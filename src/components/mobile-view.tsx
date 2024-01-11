@@ -52,7 +52,7 @@ export default function MobileView(){
                         <br/>
                         <p style={{fontSize:"0.85rem"}}><strong>Retirement Income</strong></p>
                         <h3 style={{fontWeight:"800"}}>Starting Year 2056 </h3>
-                        <br/>
+                        <br/><br/>
                         <Stats amount="$300,000" title="My Goal" width="18rem"/>
                         <br/>
 
@@ -61,7 +61,7 @@ export default function MobileView(){
                             <Stats amount="$300" title="Est. Monthly Income"/>
                         </div>
 
-                        <br/><br/>
+                        <br/><br/><br/>
                         <h3>Contributions Overtime</h3>
                         <br/>
                                
@@ -80,6 +80,7 @@ export default function MobileView(){
                         <h3>How do I compare to my peers?</h3>
                         <p style={{fontSize:"0.8rem"}}>These numbers represent current goal achievement</p>
                         <br/><br/>
+                        <div style={{display:"flex",flexFlow:"column", gap:"1rem"}}>
                         <div style={{justifyContent:"space-between",paddingRight:"1rem",paddingLeft:"1rem",display:"flex", alignItems:"center", gap:"2.5rem"}}>
                             <h4>Age: </h4>
                             <Select
@@ -94,6 +95,7 @@ export default function MobileView(){
                             />
                                 
                         </div>
+                        
 
                         <div style={{ display:"flex",justifyContent:"space-between",paddingRight:"1rem",paddingLeft:"1rem", alignItems:"center", gap:"1.5rem"}}>
                             <h4>Salary: </h4>
@@ -123,6 +125,8 @@ export default function MobileView(){
                             />
                                     
                         </div>
+                        </div>
+                        
 
                         <div style={{justifyContent:"center",width:"100%", display:"flex", gap:"2rem", marginBottom:"2rem", marginTop:"3.5rem", marginRight:"1rem"}}>
                             <CircularProgress percentage={78} title="Average"/>
@@ -130,7 +134,9 @@ export default function MobileView(){
                             <CircularProgress percentage={59} title="Me"/>
                         </div>    
                     </div>
+                    
                 </div>
+                <br/>
 
                 <div className="mobile-card" style={{padding:0, flexFlow:"column", width:"95%"}}>
                     <div style={{width:"100%", padding:"1.5rem"}}>
@@ -160,7 +166,7 @@ export default function MobileView(){
                         </div>
                         
                         </div>
-                        <button style={{marginTop:"1.5rem", borderTopRightRadius:0,borderTopLeftRadius:0, borderBottomLeftRadius:"1rem", borderBottomRightRadius:"1rem"}} className="button">Update</button>
+                        <button style={{fontSize:"1rem",marginTop:"1.5rem", borderTopRightRadius:0,borderTopLeftRadius:0, borderBottomLeftRadius:"1rem", borderBottomRightRadius:"1rem"}} className="button">Update</button>
                     
                     </div>
                     

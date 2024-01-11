@@ -81,7 +81,7 @@ export default function MobileView(){
                         <p style={{fontSize:"0.8rem"}}>These numbers represent current goal achievement</p>
                         <br/><br/>
                         <div style={{display:"flex",flexFlow:"column", gap:"1rem"}}>
-                        <div style={{justifyContent:"space-between",paddingRight:"1rem",paddingLeft:"1rem",display:"flex", alignItems:"center", gap:"2.5rem"}}>
+                        <div style={{justifyContent:"space-between",paddingRight:"",paddingLeft:"1rem",display:"flex", alignItems:"center", gap:"2.5rem"}}>
                             <h4>Age: </h4>
                             <Select
                             defaultValue="Under 30"
@@ -97,7 +97,7 @@ export default function MobileView(){
                         </div>
                         
 
-                        <div style={{ display:"flex",justifyContent:"space-between",paddingRight:"1rem",paddingLeft:"1rem", alignItems:"center", gap:"1.5rem"}}>
+                        <div style={{ display:"flex",justifyContent:"space-between",paddingRight:"",paddingLeft:"1rem", alignItems:"center", gap:"1.5rem"}}>
                             <h4>Salary: </h4>
                             <Select
                             defaultValue="under 25"
@@ -112,7 +112,7 @@ export default function MobileView(){
                         
                         </div>
 
-                        <div style={{ display:"flex",justifyContent:"space-between",paddingRight:"1rem",paddingLeft:"1rem", alignItems:"center", gap:"1.2rem"}}>
+                        <div style={{ display:"flex",justifyContent:"space-between",paddingRight:"",paddingLeft:"1rem", alignItems:"center", gap:"1.2rem"}}>
                             <h4>Gender: </h4>
                             <Select
                             defaultValue="male"

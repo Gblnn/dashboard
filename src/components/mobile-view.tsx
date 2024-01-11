@@ -53,7 +53,7 @@ export default function MobileView(){
                         <p style={{fontSize:"0.85rem"}}><strong>Retirement Income</strong></p>
                         <h3 style={{fontWeight:"800"}}>Starting Year 2056 </h3>
                         <br/><br/>
-                        <Stats amount="$300,000" title="My Goal" width="18rem"/>
+                        <Stats amount="$300,000" title="My Goal" width="19rem"/>
                         <br/>
 
                         <div style={{display:"flex", width:"21rem"}}>

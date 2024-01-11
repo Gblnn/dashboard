@@ -1,4 +1,3 @@
-
 import { Select } from "antd";
 import 'react-circular-progressbar/dist/styles.css';
 import Chart from "../components/chart";
@@ -12,12 +11,7 @@ import TodayStats from "../components/today-stats";
 import TransactionSummary from "../components/transaction-summary";
 import MobileView from "../components/mobile-view";
 
-
-
-
 export default function Home() {
-
-    
 
     return(
         <>
@@ -32,24 +26,24 @@ export default function Home() {
 
                     <Profile profile="/profile.webp" title="Hi Mike," subtitle="welcome back"/>
 
-                    <div style={{height:"72vh",display:'flex', flexFlow:"column", gap:"1rem",  marginLeft:"0.5rem", overflowY:"auto", paddingLeft:"1rem",marginTop:"1.5rem", paddingRight:"1.5rem"}}>
-                        
+                    <div style={{height:"72vh",display:'flex', flexFlow:"column", gap:"1rem",  marginLeft:"0.5rem", overflowY:"auto", paddingLeft:"1rem",marginTop:"1.5rem", paddingRight:"1.5rem"}}>  
             
                     <TodayStats flexflow="column" separation="1rem"/>
                     <DropdownMenu/>
                     
                     <div style={{height:"1rem"}}></div>
-                    <div style={{}}>
-                        <h4 style={{fontWeight:"800", marginBottom:"1rem"}}>Recent Transactions</h4>
-                        <div style={{display:"flex", flexFlow:"column", gap:"0.5rem", height:""}}>
-                            <TransactionSummary date="2020-08-07" summary="Withdrawal Transfer to Bank-XXX11"/>
-                            <TransactionSummary date="2020-07-21" summary="Withdrawal Transfer to Bank-XXX11"/>
+                        <div>
+                            <h4 style={{fontWeight:"800", marginBottom:"1rem"}}>Recent Transactions</h4>
+                            <div style={{display:"flex", flexFlow:"column", gap:"0.5rem", height:""}}>
+                                <TransactionSummary date="2020-08-07" summary="Withdrawal Transfer to Bank-XXX11"/>
+                                <TransactionSummary date="2020-07-21" summary="Withdrawal Transfer to Bank-XXX11"/>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
                 
             </div>
+
             <div className="middle">
 
                 <div style={{ margin:"", paddingLeft:"1rem",paddingRight:"1rem", height:"90%", overflowY:"auto", overflowX:"hidden"}}>
@@ -131,38 +125,18 @@ export default function Home() {
                             <CircularProgress percentage={78} title="Average"/>
                             <CircularProgress percentage={95} title="Top"/>
                             <CircularProgress percentage={59} title="Me"/>
-
-                            
                         </div>
                         
                     </div>
                     <Retirement/>
-                    
-                    
-
-                    {/* <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1>
-                    <h1>Test</h1> */}
-                    
                 </div>
                     
-    
             </div>
+
             <div className="retirement-strategy">
             <RetirementStrategy/>
-                
             </div>
             
-
         </div>
         
         </>

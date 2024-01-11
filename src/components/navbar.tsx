@@ -45,7 +45,7 @@ export default function Navbar() {
             
             <div className="desktop-only" style={{flexFlow:"column", gap:"1rem"}}>
             <button className="nav-item">
-                <Badge color="#32BDEF" dot={true}>
+                <Badge color="#85afff" dot={true}>
                 <BellOutlined/>
                 </Badge>
                 

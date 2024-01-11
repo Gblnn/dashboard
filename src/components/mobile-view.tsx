@@ -14,7 +14,7 @@ export default function MobileView(){
         <div className="mobile-view">
             <div className="" style={{zIndex:"10",backgroundColor:"white",position:"fixed", width:"100%", display:"flex", justifyContent:"flex-end"}}>
                 <button style={{marginRight:"1.25rem", marginTop:"1.25rem", marginBottom:"1rem"}} className="nav-item">
-                    <Badge color="#32BDEF" dot={true}>
+                    <Badge color="#85afff" dot={true}>
                     <BellOutlined style={{fontSize:"1.25rem"}}/>
                     </Badge>
                 </button>

@@ -56,7 +56,7 @@ export default function MobileView(){
                         <Stats amount="$300,000" title="My Goal" width="18rem"/>
                         <br/>
 
-                        <div style={{display:"flex"}}>
+                        <div style={{display:"flex", width:"21rem"}}>
                             <Stats amount="59%" title="Goal Achieved"/>
                             <Stats amount="$300" title="Est. Monthly Income"/>
                         </div>

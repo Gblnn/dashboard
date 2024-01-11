@@ -11,7 +11,7 @@ export default function TodayStats(props:Props) {
         <div style={{display:"flex", flexWrap:"wrap", flexFlow:"column", gap:"0.75rem"}}>
         <h3>Today</h3>
         <div>
-            <h2 style={{fontWeight:"800", fontSize:props.amountfontsize}}>$19,892</h2>
+            <h2 style={{fontWeight:"600", fontSize:props.amountfontsize}}>$19,892</h2>
             <p style={{fontSize:"0.9rem"}}>Account Balance</p>
         </div>
 

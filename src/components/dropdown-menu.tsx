@@ -30,7 +30,7 @@ export default function DropdownMenu(props:Props){
 
     return(
         <Dropdown menu={{items}} trigger={['click']} >
-            <button style={{width:props.width, marginTop:props.marginTop, textAlign:"center"}} className="dropdown">I want to...</button>
+            <button style={{width:props.width, marginTop:props.marginTop, textAlign:"center", fontSize:"1rem"}} className="dropdown">I want to...</button>
         </Dropdown>
     )
 }
